@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="textEnd"
+            android:text="账号"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/textView2"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="20dp"
+            android:textAlignment="textEnd"
+            android:text="密码"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/textView3"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/Name"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Password"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/SignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="登录" />
+
+            <CheckBox
+                android:id="@+id/AutoSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/SignIn"
+                android:text="自动登录" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

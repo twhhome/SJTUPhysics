@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="账号">
+
+        <SwitchPreference
+            android:key="autoSignIn"
+            android:defaultValue="true"
+            android:summary="打开app时自动登录"
+            android:title="自动登录"/>
+
+        <Preference
+            android:key="logout"
+            android:title="退出登录"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="关于大物教学系统">
+
+        <Preference
+            android:title="应用介绍"
+            android:summary="SJTU的大物教学网站的App"/>
+
+        <Preference
+            android:title="当前版本"
+            android:summary="V1.0.1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="关于作者">
+
+        <Preference
+            android:title="作者"
+            android:summary="twhhome"/>
+
+        <Preference
+            android:key="email"
+            android:title="邮箱"
+            android:summary="twhhome@foxmail.com"/>
+
+        <Preference
+            android:key="github"
+            android:title="GitHub"
+            android:summary="https://github.com/twhhome"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
